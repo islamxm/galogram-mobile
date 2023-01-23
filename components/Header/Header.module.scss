@@ -1,0 +1,20 @@
+.header {
+    border-bottom: 1px solid var(--lightGray);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    &__in {
+        padding: 10px 0;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 700;
+    }
+
+    
+}

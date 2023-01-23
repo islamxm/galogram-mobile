@@ -1,0 +1,49 @@
+.navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    
+
+    .inner {
+        border-top: 1px solid var(--lightGray);
+        display: flex;
+        max-width: 520px;
+        width: 100%;
+        // border: 1px solid red;
+        background-color: #fff;
+        padding: 10px;
+        
+
+        .item {
+            width: calc(100% / 5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                width: 30px;
+                height: 30px;
+                font-size: 30px;
+                line-height: 30px;
+                transition: all .2s ease;
+                color: var(--darkGray);
+                
+                &:active {
+                    transform: scale(0.9);
+                }
+            }
+
+            a.active {
+                color: var(--text);
+            }
+        }
+
+        
+    }
+}

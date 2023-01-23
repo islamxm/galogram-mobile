@@ -1,0 +1,29 @@
+.auth {
+    height: 100%;
+
+    .inner {
+        padding: 50px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+
+        .logo {
+            margin-bottom: 50px;
+        }
+        .body {
+            width: 100%;
+
+            .ex {
+                text-align: center;
+                a {
+                    color: var(--orange);
+                    font-weight: 700;
+                }
+            }
+        }   
+    }
+
+}
