@@ -1,14 +1,17 @@
 import styles from './Avatar.module.scss';
 import Image from 'next/image';
+import avatarPlaceholder from '/public/avatar-placeholder.png';
 
 const Avatar = ({
     variant,
-    image,
+    image = avatarPlaceholder,
     link,
     isActive,
+    size,
+    storie
 }) => {
     return (
-        <div className={`${styles.avatar} ${isActive ? 'active' : ''}`} >
+        <div style={{width: size, height: size}} className={`${styles.avatar} ${isActive ? styles.active : ''} ${storie ? styles.storie : ''}`} >
             <div className={styles.inner}>
                 <Image
                     className={styles.img}

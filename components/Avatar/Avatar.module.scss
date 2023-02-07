@@ -18,6 +18,10 @@
     }
 }
 
-.avatar.active {
+.avatar.storie.active {
     border-color: var(--orange);
+}
+
+.avatar.storie {
+    border-color: var(--midGray);
 }

@@ -1,0 +1,28 @@
+.homeStories {
+    background-color: #fff;
+
+    .inner {
+        padding: 10px;
+        overflow-x: auto;
+        display: flex;
+        align-items: center;
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            width: 80px;
+            flex: 0 0 auto;
+            overflow: hidden;
+
+            .username {
+                text-align: center;
+                width: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}

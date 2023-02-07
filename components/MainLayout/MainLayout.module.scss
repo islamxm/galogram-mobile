@@ -1,0 +1,12 @@
+.layout {
+    // height: 100%;
+    max-width: 520px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--bg);
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    padding-bottom: 51px;
+}

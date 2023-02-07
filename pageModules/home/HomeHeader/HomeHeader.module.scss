@@ -1,0 +1,30 @@
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    // border: 1px solid red;
+    background-color: #fff;
+    z-index: 10;
+    
+    .inner {
+        padding: 10px; 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+
+        }
+
+        .action {
+            display: flex;
+            align-items: center;
+
+            .item {
+                flex: 0 0 auto;
+                margin: 0 2px;
+            }
+        }
+    }
+}

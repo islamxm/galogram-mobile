@@ -4,16 +4,25 @@ import Navbar from '@/components/Navbar/Navbar'
 import Cookies from 'js-cookie';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
+import { Row, Col } from 'antd';
+
+//modules
+import HomeHeader from '@/pageModules/home/HomeHeader/HomeHeader';
+import HomeFeed from '@/pageModules/home/HomeFeed/HomeFeed';
+import MainLayout from '@/components/MainLayout/MainLayout';
+import HomeStories from '@/pageModules/home/HomeStories/HomeStories';
 
 
-const Home = () => {
+
+
+const HomePage = () => {
 	const router = useRouter()
 
-	useEffect(() => {
-		if(!Cookies.get('token')) {
-			router.push('/auth/login')
-		}
-	}, [])
+	// useEffect(() => {
+	// 	if(!Cookies.get('token')) {
+	// 		router.push('/auth/login')
+	// 	}
+	// }, [])
 
 
 	return (
@@ -24,18 +33,29 @@ const Home = () => {
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
 			  </Head>
-			<Layout>
-				<Navbar/>
-				<h1>Home</h1>
-			</Layout>
+			  <MainLayout>
+			  		<HomeHeader/>
+					<Col span={24}>
+						<Row gutter={[10,10]}>
+							<Col span={24}>
+								
+							</Col>
+							<Col span={24}>
+								<HomeStories/>
+							</Col>
+							<Col span={24}>
+								<HomeFeed/>
+							</Col>
+						</Row>
+					</Col>
+					
+					
+					<Navbar/>
+				</MainLayout>
+			
 		</>
 		
 	)
-
-
-
-
-	
 }
 
-export default Home;
+export default HomePage;
